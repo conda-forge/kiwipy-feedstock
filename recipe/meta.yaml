@@ -1,8 +1,8 @@
 {% set name = "kiwipy" %}
-{% set version = "0.2.1" %}
+{% set version = "0.3.4" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "c453da066fc2785c1424aa90f001903a94bc00eb6b301b61b967087981a54465" %}
+{% set hash_value = "99baf5089434cace49501a2dd5e81ee05fd4a81dad3fe03f27c041307d361128" %}
 
 package:
   name: '{{ name|lower }}'
