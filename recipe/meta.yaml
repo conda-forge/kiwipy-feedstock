@@ -31,10 +31,10 @@ requirements:
     - backports.tempfile  # [py < 32]
     - futures  # [py < 27]
     # include dependencies for 'rmq' extra
-    - pika >= 1.0.0b1
-    - topika >= 0.1.2
-    - tornado >= 4  # [py2k]
-    - tornado < 5  # [not py2k]
+    - pika >=1.0.0b1
+    - topika >=0.1.2
+    - tornado >=4  # [py2k]
+    - tornado <5  # [not py2k]
     - pyyaml
 
 test:
