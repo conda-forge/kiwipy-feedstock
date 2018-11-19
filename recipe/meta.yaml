@@ -30,7 +30,7 @@ requirements:
     - enum34  # [py < 34]
     - backports.tempfile  # [py < 32]
     - futures  # [py < 27]
-    # add dependencies for 'rmq' extra
+    # include dependencies for 'rmq' extra
     - pika >= 1.0.0b1
     - topika >= 0.1.2
     - tornado >= 4  # [py2k]
