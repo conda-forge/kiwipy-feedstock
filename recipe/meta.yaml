@@ -29,10 +29,10 @@ requirements:
     - typing  # [py < 35]
     - enum34  # [py < 34]
     - backports.tempfile  # [py < 32]
-    - futures  # [py < 27]
+    - futures  # [py < 32]
     # include dependencies for 'rmq' extra
-    - pika >=1.0.0b1
-    - topika >=0.1.2
+    - pika >=1.0.0b2
+    - topika >=0.2.0, <0.3.0
     - tornado >=4  # [py2k]
     - tornado <5  # [not py2k]
     - pyyaml
