@@ -110,6 +110,7 @@ Current build status
       </details>
     </td>
   </tr>
+![ppc64le disabled](https://img.shields.io/badge/ppc64le-disabled-lightgrey.svg)
 </table>
 
 Current release info
@@ -206,4 +207,5 @@ Feedstock Maintainers
 
 * [@ltalirz](https://github.com/ltalirz/)
 * [@muhrin](https://github.com/muhrin/)
+* [@sphuber](https://github.com/sphuber/)
 
