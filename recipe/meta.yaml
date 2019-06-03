@@ -1,8 +1,8 @@
 {% set name = "kiwipy" %}
-{% set version = "0.5.0" %}
+{% set version = "0.5.1" %}
 {% set file_ext = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "3073bd6d15d2d0fee65a6e31f98affa2f743cd7084e8ed9bcded1cf424bdcc4f" %}
+{% set hash_value = "6880644a4b5edeb0e2c3d6eeb72a328b64f3c682637ea8f54545a1a221b288e2" %}
 
 package:
   name: '{{ name|lower }}'
@@ -14,7 +14,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
