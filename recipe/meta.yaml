@@ -1,38 +1,31 @@
-{% set name = "kiwipy" %}
 {% set version = "0.5.1" %}
-{% set file_ext = "tar.gz" %}
-{% set hash_type = "sha256" %}
-{% set hash_value = "6880644a4b5edeb0e2c3d6eeb72a328b64f3c682637ea8f54545a1a221b288e2" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: kiwipy
+  version: {{ version }}
 
 source:
-  fn: '{{ name }}-{{ version }}.{{ file_ext }}'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.{{ file_ext }}
-  '{{ hash_type }}': '{{ hash_value }}'
+  url: https://pypi.io/packages/source/k/kiwipy/kiwipy-{{ version }}.tar.gz
+  sha256: 6880644a4b5edeb0e2c3d6eeb72a328b64f3c682637ea8f54545a1a221b288e2
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 1
+  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
 
 requirements:
   host:
     - python
     - pip
-    - setuptools
-
   run:
     - python
     - six
-    - typing  # [py < 35]
-    - enum34  # [py < 34]
-    - backports.tempfile  # [py < 32]
-    - futures  # [py < 32]
+    - typing  # [py<35]
+    - enum34  # [py<34]
+    - backports.tempfile  # [py<32]
+    - futures  # [py<32]
     # include dependencies for 'rmq' extra
     - pika >=1.0.0b2
-    - topika >=0.2.0, <0.3.0
+    - topika >=0.2.0,<0.3.0
     - tornado >=4  # [py2k]
     - tornado <5  # [not py2k]
     - pyyaml
@@ -42,14 +35,11 @@ test:
     - kiwipy
     - kiwipy.rmq
 
-  source_files:
-   - test
-
 about:
   home: https://github.com/muhrin/kiwipy
-  license: MIT or GPLv3
+  license: MIT
   license_family: MIT
-  license_file: 'LICENSE'
+  license_file: LICENSE
   summary: A python remote communications library
   description: |
         kiwipy is a library that makes remote messaging using RabbitMQ (and any
