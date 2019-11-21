@@ -3,7 +3,7 @@ About kiwipy
 
 Home: https://github.com/muhrin/kiwipy
 
-Package license: MIT or GPLv3
+Package license: MIT
 
 Feedstock license: BSD 3-Clause
 
