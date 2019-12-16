@@ -24,11 +24,11 @@ requirements:
     - backports.tempfile  # [py<32]
     - futures  # [py<32]
     # include dependencies for 'rmq' extra
-    - pika >=1.0.0b2
-    - topika >=0.2.0,<0.3.0
+    - pika >=1.0.0
+    - topika >=0.2.1,<0.3.0
     - tornado >=4  # [py2k]
-    - tornado <5  # [not py2k]
-    - pyyaml
+    - tornado <6  # [not py2k]
+    - pyyaml ~=5.1
 
 test:
   imports:
@@ -36,7 +36,7 @@ test:
     - kiwipy.rmq
 
 about:
-  home: https://github.com/muhrin/kiwipy
+  home: https://github.com/aiidateam/kiwipy
   license: MIT
   license_family: MIT
   license_file: LICENSE
@@ -48,8 +48,8 @@ about:
         mistake which is then difficult to debug. With kiwipy, there's none of
         this, just messaging, made simple, with all the nice properties and
         guarantees of AMQP.
-  doc_url: https://github.com/muhrin/kiwipy
-  dev_url: https://github.com/muhrin/kiwipy
+  doc_url: https://github.com/aiidateam/kiwipy
+  dev_url: https://github.com/aiidateam/kiwipy
 
 extra:
   recipe-maintainers:
