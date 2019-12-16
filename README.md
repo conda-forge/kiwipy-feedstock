@@ -1,7 +1,7 @@
 About kiwipy
 ============
 
-Home: https://github.com/muhrin/kiwipy
+Home: https://github.com/aiidateam/kiwipy
 
 Package license: MIT
 
