@@ -1,4 +1,4 @@
-{% set version = "0.5.3" %}
+{% set version = "0.6.0" %}
 
 package:
   name: kiwipy
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/k/kiwipy/kiwipy-{{ version }}.tar.gz
-  sha256: 3fa9cb1a0093275a34cfbfaa9049e774419896072c6896d012d9462a3486190c
+  sha256: cd5cbc8eb5dca397066da0487b9a8a1821c2c7d8e07a899a42989a858ed944d0
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
@@ -42,12 +42,12 @@ about:
   license_file: LICENSE
   summary: A python remote communications library
   description: |
-        kiwipy is a library that makes remote messaging using RabbitMQ (and any
-        other protocol for which a backend is written) EASY. I don't know about
-        you but I find RabbitMQ HARD. It's all too easy to make a configuration
-        mistake which is then difficult to debug. With kiwipy, there's none of
-        this, just messaging, made simple, with all the nice properties and
-        guarantees of AMQP.
+    kiwipy is a library that makes remote messaging using RabbitMQ (and any
+    other protocol for which a backend is written) EASY. I don't know about
+    you but I find RabbitMQ HARD. It's all too easy to make a configuration
+    mistake which is then difficult to debug. With kiwipy, there's none of
+    this, just messaging, made simple, with all the nice properties and
+    guarantees of AMQP.
   doc_url: https://github.com/aiidateam/kiwipy
   dev_url: https://github.com/aiidateam/kiwipy
 
