@@ -18,16 +18,12 @@ requirements:
     - pip
   run:
     - python
-    - six
-    - typing  # [py<35]
-    - enum34  # [py<34]
-    - backports.tempfile  # [py<32]
-    - futures  # [py<32]
+    - shortuuid
+    - async_generator
+    - pytray >=0.2.2,<0.3.0
+    - deprecation
     # include dependencies for 'rmq' extra
-    - pika >=1.0.0
-    - topika >=0.2.1,<0.3.0
-    - tornado >=4  # [py2k]
-    - tornado <6  # [not py2k]
+    - aio-pika
     - pyyaml ~=5.1
 
 test:
