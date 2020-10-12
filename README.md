@@ -5,9 +5,13 @@ Home: https://github.com/aiidateam/kiwipy
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/kiwipy-feedstock/blob/master/LICENSE.txt)
 
 Summary: A python remote communications library
+
+Development: https://github.com/aiidateam/kiwipy
+
+Documentation: https://github.com/aiidateam/kiwipy
 
 kiwipy is a library that makes remote messaging using RabbitMQ (and any
 other protocol for which a backend is written) EASY. I don't know about
