@@ -21,7 +21,7 @@ requirements:
     - python
     - shortuuid
     - async_generator
-    - pytray >=0.2.2,<0.3.0
+    - pytray >=0.2.2,<0.4.0
     - deprecation
     # include dependencies for 'rmq' extra
     - aio-pika
