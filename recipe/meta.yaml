@@ -1,4 +1,4 @@
-{% set version = "0.6.1" %}
+{% set version = "0.7.0" %}
 
 package:
   name: kiwipy
@@ -6,22 +6,22 @@ package:
 
 source:
   url: https://pypi.io/packages/source/k/kiwipy/kiwipy-{{ version }}.tar.gz
-  sha256: 7751289ff55de85d7135c8f3508b5f527f7f4f7f1c0cb9f4b7065227b49ee2b8
+  sha256: dd77cdcebd8765feea870f3efb2fdf7b151fc1e196d057671b31fcc6832241d1
 
 build:
   noarch: python
-  number: 1
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
     - python
     - pip
   run:
-    - python
+    - python >=3.6
     - shortuuid
     - async_generator
-    - pytray >=0.2.2,<0.3.0
+    - pytray >=0.2.2,<0.4.0
     - deprecation
     # include dependencies for 'rmq' extra
     - aio-pika
