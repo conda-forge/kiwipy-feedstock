@@ -1,4 +1,4 @@
-{% set version = "0.7.6" %}
+{% set version = "0.8.0" %}
 
 package:
   name: kiwipy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/k/kiwipy/kiwipy-{{ version }}.tar.gz
-  sha256: 0e5ae2217ec930a8d6f52d1f098edc8fda7f3412c216851dd9971f87b1b8da00
+  sha256: d659e48bb30ede46bd08b4881e3daee24003bad97bb3589f39d5a2dc617f99be
 
 build:
   noarch: python
