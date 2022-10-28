@@ -1,4 +1,4 @@
-{% set version = "0.7.6" %}
+{% set version = "0.8.1" %}
 
 package:
   name: kiwipy
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/k/kiwipy/kiwipy-{{ version }}.tar.gz
-  sha256: 0e5ae2217ec930a8d6f52d1f098edc8fda7f3412c216851dd9971f87b1b8da00
+  sha256: dc91eca1d6b17d63e081158ca789391a99a9acdbaca648b87ae806ce3b16098a
 
 build:
   noarch: python
@@ -17,15 +17,17 @@ requirements:
   host:
     - python
     - pip
+    - flit-core >=3.4,<4
   run:
-    - python >=3.6
-    - shortuuid
-    - async_generator
-    - pytray >=0.2.2,<0.4.0
+    - python >=3.7
+    - aio-pika ~=8.2
     - deprecation
+    - nest-asyncio ~=1.5,>=1.5.1
+    - pamqp ~=3.2
+    - pytray >=0.3.4,<0.4.0
     # include dependencies for 'rmq' extra
-    - aio-pika
-    - pyyaml ~=5.1
+    - pyyaml ~=5.4
+    - shortuuid
 
 test:
   imports:
@@ -36,7 +38,7 @@ about:
   home: https://github.com/aiidateam/kiwipy
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENSE.txt
   summary: A python remote communications library
   description: |
     kiwipy is a library that makes remote messaging using RabbitMQ (and any
