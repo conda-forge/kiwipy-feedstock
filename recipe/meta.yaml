@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -25,7 +25,7 @@ requirements:
     - pamqp ~=3.2
     - pytray >=0.3.4,<0.4.0
     # include dependencies for 'rmq' extra
-    - pyyaml ~=5.4
+    - pyyaml ~=6.0
     - shortuuid
 
 test:
