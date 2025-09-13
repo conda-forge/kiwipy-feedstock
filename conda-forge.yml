@@ -3,6 +3,7 @@ provider:
 conda_forge_output_validation: true
 bot:
   automerge: true
+  inspection: update-all  # update recipe using all methods
 github:
   branch_name: main
   tooling_branch_name: main

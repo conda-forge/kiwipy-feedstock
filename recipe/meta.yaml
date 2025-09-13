@@ -10,7 +10,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - flit-core >=3.4,<4
   run:
     - python >=3.8
-    - aio-pika ~=9.0
+    - aio-pika ~=9.4.0
     - deprecation
     - pamqp ~=3.2
     - pytray >=0.3.4,<0.4.0
@@ -29,9 +29,14 @@ requirements:
     - shortuuid
 
 test:
+  requires:
+    - python {{ python_min }}
+    - pip
   imports:
     - kiwipy
     - kiwipy.rmq
+  commands:
+    - pip check
 
 about:
   home: https://github.com/aiidateam/kiwipy
